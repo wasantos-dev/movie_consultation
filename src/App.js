@@ -1,23 +1,14 @@
 import React from 'react';
 import './App.css';
-import Header from './header/header'
-import Main from './menu/menu';
-import Footer from './footer/footer';
+import Modal from './modal/modal.jsx'
 
 function App() {
   return (
     <div className="App">
-      <header className="header">
-        <Header />
-      </header>
-      <main>
-        <Main />
-      </main>
-      <footer className="App-footer">
-        <div className="App-link">
-          <Footer />
-        </div>
-      </footer>
+      <button type="button" className="btn btn-primary" data-toggle="modal" data-target="#exampleModal" id="buttonzinho">
+        Launch demo modal
+      </button>
+      <Modal id="exampleModal" />
     </div>
   );
 }
